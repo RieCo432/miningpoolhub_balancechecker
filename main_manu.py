@@ -3,10 +3,8 @@
 import requests
 import json
 import time
-import api_keys
 
-api_key = "e798d89ba8e4debc2f3904f23e0fbaa99dc3c3a85b63924d63375b2057231a3b"
-
+api_key = 
 request_string = "https://miningpoolhub.com/index.php?page=api&action=getuserallbalances&api_key=" + api_key
 
 bittrex_getticker_request_string = "https://bittrex.com/api/v1.1/public/getticker?market=BTC-"
@@ -96,7 +94,7 @@ def check_balance_btc_equivalent():
 
 
 def log_btc_equivalent(amount):
-    with open("/var/www/colinries.com/mining/colin.log", "a") as logfile:
+    with open("/var/www/colinries.com/mining/manu.log", "a") as logfile:
         logfile.write(time.strftime("%Y/%m/%d-%H:%M:%S\t") + amount + "\n")
 
 
